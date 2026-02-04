@@ -1,0 +1,18 @@
+.login-container{
+    margin-top: 100px;
+    margin-right: 30%;
+    margin-left: 30%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #000;
+    padding: 0px 40px 0px 40px;
+}
+
+.login{
+    padding-top:20px;
+}
+.btn{
+    margin-bottom:20px;
+    text-align:center;
+    
+}
