@@ -16,18 +16,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <header class="bg-dark text-white text-center py-4 mb-4">
         <a class="navbar-brand" href="index.html" style="font-family: 'Playfair Display', serif; font-size: 1.5rem;">
-            <img src="images/brand-img.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-middle me-2">
-                RK Clothings
+        <img src="images\brand-img.jpg" alt="Logo" width="80" height="80" class="d-inline-block align-middle mb-2">
+        <h1>RK Clothings</h1>
         </a>
-        <ul class="nav justify-content-end">
+        <p>All New Collection</p>
+    <nav class="navbar bg-dark" data-bs-theme="dark">
+        <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Mens</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Womens</a>
+                <a class="nav-link" href="#">Women</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Kids</a>
@@ -37,22 +38,20 @@
             </li>
         </ul>
     </nav>
+    </header>
 
     <div class="maincontent">
-        <div class="card" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="Men-section">
-            <div class="card-body">
-                <a href="#" class="btn btn-primary">Men's Section</a>
-            </div>
+        <div class="container">
+            <div id="product-grid" class="row g-4"></div>
         </div>
     </div>
 
 
 
-</header>
 
-<footer>
-    <p class= footer-text>© 2026 RK Clothings. All rights reserved.</p>
+
+<footer class="bg-black text-white text-center mb-9">
+    <p class="footer-text">© 2026 RK Clothings. All rights reserved.</p>
 </footer>
     <!-- javascript link  -->
     <script src="script.js"></script>

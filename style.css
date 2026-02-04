@@ -1,3 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.maincontent {
+    flex: 1;
+}
+
 .login-container{
     margin-top: 100px;
     margin-right: 30%;
@@ -15,4 +25,26 @@
     margin-bottom:20px;
     text-align:center;
     
+}
+
+.card-img-top{
+    height: 280px;
+    object-fit: contain; /*keeps the whole product visible*/
+    padding: 20px;
+    background-color: lightgrey;
+}
+
+.card{
+    transition: transform 0.2s ease-in-out, shadow 0.2s;
+    border: none;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)!important;
+}
+
+.card-title{
+    font-size: 1.1rem;
+    font-weight: 600;
 }
