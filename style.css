@@ -28,7 +28,7 @@ body {
 }
 
 .card-img-top{
-    height: 280px;
+    height: 350px;
     object-fit: contain; /*keeps the whole product visible*/
     padding: 20px;
     background-color: lightgrey;

@@ -20,41 +20,29 @@ if (form) {
     });
 }
 
-const grid = document.querySelector("#product-grid");
+//creating own api
+const product = [
+    {img:"https://th.bing.com/th/id/OIP.kMtEEBf2ruRqDWZIOECz5gHaNO?w=186&h=332&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:1},
+    {img:"https://th.bing.com/th/id/OIP.kMtEEBf2ruRqDWZIOECz5gHaNO?w=186&h=332&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:2},
+    {img:"https://th.bing.com/th/id/OIP.kMtEEBf2ruRqDWZIOECz5gHaNO?w=186&h=332&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:3}
+];
 
-//Fake API for men's clothing
-const API_URL = "https://api.escuelajs.co/api/v1/categories/products";
+// Target the container directly
+const container = document.querySelector("#product-container");
 
-async function fetchClothes() {
-    // Check if grid exists (prevents error on login-pg.html)
-    if (!grid) return;
+const result = product.map((item) => {
+    return `
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <img src="${item.img}" class="card-img-top" alt="${item.Brandname}" style="height:350px; object-fit:contain; padding: 10px;">
+            <div class="card-body">
+                <h3>${item.Brandname}</h3>
+                <p>Price: ₹${item.price}</p>
+                <button onclick="addToCart(${item.id})" class="btn btn-primary w-100">Add To Cart</button>
+            </div>
+        </div>
+    </div>`;
+}).join("");
 
-    grid.innerHTML = '<div class = "text-center w-100"><h3>Loading Products...</h3></div>';
-
-    try{
-        const response = await fetch(API_URL);
-        const products = await response.json();
-
-        grid.innerHTML = "";
-
-        products.forEach(product => {
-            const productHTML = `
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card h-100 shadow-sm">
-                    <img src="${product.image}" class="card-img-top" alt="${product.title}">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-truncate">${product.title}</h5>
-                        <p class="card-text text-muted small">${product.description.substring(0, 60)}...</p>
-                        <h6 class="mt-auto fw-bold">₹ ${(product.price * 80).toFixed(0)}</h6>
-                        <button class="btn btn-outline-dark mt-3 w-100">View Details</button>
-                    </div>
-                </div>
-            </div>`;
-
-            grid.innerHTML += productHTML;
-        });
-    } catch(error) {
-        grid.innerHTML = `<div class="alert alert-danger">Error loading products:${error}</div>`;
-    }
-}
-fetchClothes();
+// Just inject the result directly into the row
+container.innerHTML = result;
