@@ -24,7 +24,10 @@ if (form) {
 const kidsproduct = [
     {img:"https://th.bing.com/th/id/OIP.K8qhS0TCefDe6l6Ke7HZeAHaHa?w=198&h=198&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:1},
     {img:"https://th.bing.com/th/id/OIP.ov63oPAcZEHRC0iBaer7TQHaLH?w=130&h=150&c=6&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:2},
-    {img:"https://th.bing.com/th/id/OIP.ZDhJC5vvO0aKQZHV8MDpAAHaIr?w=143&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:3}
+    {img:"https://th.bing.com/th/id/OIP.ZDhJC5vvO0aKQZHV8MDpAAHaIr?w=143&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:3},
+    {img:"https://th.bing.com/th/id/OIP.uHzQyJIJji49X-xSN2e_qgHaE8?w=267&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:4},
+    {img:"https://th.bing.com/th/id/OIP.27DwhL0RBS2MMw2-OK1nxgHaLH?w=131&h=197&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:5},
+    {img:"https://th.bing.com/th/id/OIP.6Ral9ARfnczM67nVfL7iaQHaIV?w=178&h=202&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:6}
 ];
 
 // Target the container directly
