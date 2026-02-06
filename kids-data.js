@@ -21,16 +21,16 @@ if (form) {
 }
 
 //creating own api
-const womensproduct = [
-    {img:"https://th.bing.com/th/id/OIP.kfhGbzysFNmsP8l7Yy_qKwHaLM?w=182&h=275&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:1},
-    {img:"https://th.bing.com/th/id/OIP.OLUQoTwruK4hZh9miEOMMwHaNK?w=182&h=324&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:2},
-    {img:"https://th.bing.com/th/id/OIP.533vu5pC4EPL_JE5w0DXtAHaOl?w=177&h=349&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:3}
+const kidsproduct = [
+    {img:"https://th.bing.com/th/id/OIP.K8qhS0TCefDe6l6Ke7HZeAHaHa?w=198&h=198&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:1},
+    {img:"https://th.bing.com/th/id/OIP.ov63oPAcZEHRC0iBaer7TQHaLH?w=130&h=150&c=6&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:2},
+    {img:"https://th.bing.com/th/id/OIP.ZDhJC5vvO0aKQZHV8MDpAAHaIr?w=143&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", Brandname:"Vectezy", price:16999, id:3}
 ];
 
 // Target the container directly
 const container = document.querySelector("#product-container");
 
-const result = womensproduct.map((item) => {
+const result = kidsproduct.map((item) => {
     return `
     <div class="col-md-4">
         <div class="card h-100 shadow-sm">
