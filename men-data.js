@@ -46,3 +46,15 @@ const result = mensproduct.map((item) => {
 
 // Just inject the result directly into the row
 container.innerHTML = result;
+
+//add to Cart
+let cart = JSON.parse(localStorage.getItem("my_cart")) || [];
+
+function AddToCart(productId) {
+    const itemToAdd = product.find(item => item.id === productId.id);
+
+    cart.push(itemToAdd);
+    localStorage.setItem("my_cart", JSON.stringify(cart));
+
+    alert(`${item.Brandname} added to Cart!`);
+}
